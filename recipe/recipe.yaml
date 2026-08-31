@@ -22,10 +22,6 @@ requirements:
 tests:
   - script:
       content:
-        # workaround https://github.com/prefix-dev/rattler-build/issues/2424
-        - if: osx and x86_64
-          then:
-            - export HOME=${HOME:-$PWD}
         - chezmoi --help
 
 about:
